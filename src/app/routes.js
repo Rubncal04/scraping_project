@@ -4,11 +4,11 @@ async function routes(app) {
   app
     .route('/')
     .get((req, res) => {
-      res.status(200).send('HORUS BACKEND')
+      res.status(200).send('Scrap with me')
     });
 
   app
-    .route('/boletin')
+    .route('/scrap')
     .post((req, res) => {
       scrap(req, res);
     });
