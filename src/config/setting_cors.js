@@ -4,17 +4,12 @@ import createError from'http-errors';
 const BACKEND_WHITELIST = {
   'http://localhost:4021': true,
   'http://10.0.5.101:4021': true,
-  'https://www.bkdssl.horussmartenergyapp.com': true, //PRODUCTION
-  'https://www.bkddev.horussmartenergyapp.com': true, //DEVELOPMENT
-  'https://www.hsestaging.horussmartenergyapp.com': true, //STAGING
-  'connection_controller_header': true //ACTUAL CONTROLLER CONEXION
+  'https://scrap-project.onrender.com': true, //PRODUCTION
 };
 
 const FRONTEND_WHITELIST = {
   'http://localhost:5173': true,
-  'https://www.horussmartenergyapp.com': true, //PRODUCTION
-  'https://staging.horussmartenergyapp.com': true, //STAGING
-  'https://develop.d2wv4bufcfkh3f.amplifyapp.com': true //DEVELOPMENT
+  'https://docs-horus-three.vercel.app': true, //PRODUCTION
 };
 
 const CORS_OPTION = {
