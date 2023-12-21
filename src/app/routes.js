@@ -9,7 +9,9 @@ async function routes(app) {
 
   app
     .route('/boletin')
-    .post(scrap);
+    .post((req, res) => {
+      scrap(req, res);
+    });
 }
 
 export default routes

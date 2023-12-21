@@ -1,5 +1,6 @@
 import startApolloServer from './src/server.js';
-const port = 3301;
+import 'dotenv/config'
+const port = process.env.port || 4021;
 
 async function startServer() {
   const { httpServer } = await startApolloServer();
